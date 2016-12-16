@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*大盒子标签容器*/
+.box{
+    margin:100px auto;
+    width: 500px;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    position:relative;
+}
+.img{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+/*轮播图片动的图*/
+.img ul{
+    list-style: none;
+    width: 700%;
+    position: absolute;
+    left: 0;
+}
+.img li{
+    float: left;
+}
+/*动态生成的小方块*/
+ol{
+    list-style: none;
+}
+ol li{
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    float: left;
+    margin-left: 8px;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+}
+ol{
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+}
+/*当前小方块高亮的样式*/
+.current{
+    background-color: #5EFF5E;
+}
